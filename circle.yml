@@ -9,4 +9,4 @@ dependencies:
 test:
   override:
     ## this will run tests headlessly
-    - cypress ci "a47ee863-9892-4104-a97c-f1fa69104461"
+    - cypress ci CYPRESS_CI_KEY
