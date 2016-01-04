@@ -3,10 +3,13 @@ general:
 
 dependencies:
   pre:
+    - npm install
     ## this will install the cypress-cli tools
     - npm install -g cypress
 
 test:
+  pre:
+    - npm start
   override:
     ## this will run tests headlessly
-    - cypress ci CYPRESS_CI_KEY
+    - cypress ci
