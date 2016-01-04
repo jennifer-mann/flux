@@ -4,6 +4,7 @@ general:
 dependencies:
   pre:
     - npm install
+    - npm install -g http-server
     ## this will install the cypress-cli tools
     - npm install -g cypress
 
