@@ -12,6 +12,8 @@ test:
   pre:
     - npm run server:
         background: true
+    - npm start:
+        background: true
   override:
     ## this will run tests headlessly
     - cypress ci
