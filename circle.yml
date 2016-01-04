@@ -9,7 +9,7 @@ dependencies:
 
 test:
   pre:
-    - npm ci
+    - npm run ci
   override:
     ## this will run tests headlessly
     - cypress ci
