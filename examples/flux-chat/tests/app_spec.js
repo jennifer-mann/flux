@@ -41,8 +41,8 @@ describe("Flux Chat [000]", function(){
         .get(".message-text").contains("Hello World!")
     })
 
-    it("should display time now beside new chat [003]", function(){
-      var todaysDate = cy.moment().format("HH:mm:ss A")
+    it.only("should display time now beside new chat [003]", function(){
+      var todaysDate = cy.moment().format("h:mm:ss A")
 
       cy
         .get(".message-composer").type("{enter}")
@@ -50,8 +50,6 @@ describe("Flux Chat [000]", function(){
     })
 
     it("should display new chat as coming from 'Bill' [003]", function(){
-      var todaysDate = cy.moment().format("HH:mm:ss A")
-
       cy
         .get(".message-composer").type("{enter}")
         .get(".message-list").find("li").last().contains("Bill")
