@@ -1,6 +1,10 @@
 general:
   build_dir: examples/flux-chat
 
+machine:
+  timezone:
+    America/New_York
+
 dependencies:
   pre:
     - npm install
