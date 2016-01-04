@@ -22,7 +22,8 @@
   "scripts": {
     "start": "watchify -o js/bundle.js -v -d js/app.js",
     "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js",
-    "test": "jest"
+    "test": "jest",
+    "ci": "http-server"
   },
   "author": "Bill Fisher",
   "browserify": {
